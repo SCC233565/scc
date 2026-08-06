@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Supernatural City Church</title>
+<meta name="description" content="Contact Supernatural City Church — send a prayer request, plan your visit, or reach our office.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+
+</head>
+<body>
+<header>
+  <nav>
+    <a href="index.html" class="brand">
+      <svg class="glyph" viewBox="0 0 48 48"><path d="M8 20 L14 12 L18 20 L24 8 L30 20 L34 12 L40 20 L40 34 Q24 30 8 34 Z"/><path class="flame" d="M24 4c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z" stroke="none"/></svg>
+      <span class="logo-text">SUPERNATURAL CITY<span>CHURCH</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="special-meetings.html">Meetings</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="schools.html">Schools</a>
+      <a href="sermons.html">Messages</a>
+      <a href="contact.html" style="color:var(--gold-light);">Contact</a>
+      <a href="give.html" class="nav-give-mobile">Give Online</a>
+    </div>
+    <a href="give.html" class="nav-cta">Give Online</a>
+    <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+<section class="page-banner">
+  <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+  <div class="eyebrow" style="display:inline-flex;">CONTACT &amp; PRAYER</div>
+  <h1>We'd Love to Hear From You</h1>
+  <p class="lead">Send a prayer request, ask a question, or plan your visit — our team will respond personally.</p>
+</section>
+
+<section>
+  <div class="wrap contact-grid">
+    <div class="contact-info fade-up">
+      <div class="item"><span class="label">ADDRESS</span><span class="val">Supernatural City Church<br>Church Campus Address, City, State</span></div>
+      <div class="item"><span class="label">PHONE</span><span class="val">+234 000 000 0000</span></div>
+      <div class="item"><span class="label">EMAIL</span><span class="val">info@supernaturalcitychurch.org</span></div>
+      <div class="item"><span class="label">OFFICE HOURS</span><span class="val">Tuesday – Friday, 9:00 AM – 5:00 PM</span></div>
+      <div class="item"><span class="label">WHATSAPP</span><span class="val">Message us for prayer or quick questions</span></div>
+    </div>
+    <form class="card fade-up" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+      <input class="hp" type="text" name="bot-field" tabindex="-1" autocomplete="off">
+      <input type="text" name="name" placeholder="Full name" required>
+      <input type="email" name="email" placeholder="Email address" required>
+      <input type="tel" name="phone" placeholder="Phone number (optional)">
+      <textarea name="message" placeholder="Your message or prayer request" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <svg class="glyph" viewBox="0 0 48 48"><path d="M8 20 L14 12 L18 20 L24 8 L30 20 L34 12 L40 20 L40 34 Q24 30 8 34 Z"/><path class="flame" d="M24 4c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z" stroke="none"/></svg>
+          <span class="logo-text">SUPERNATURAL CITY<span>CHURCH</span></span>
+        </div>
+        <p>Raising Kings, Priests, and Prophets. Establishing God's City in every City.</p>
+      </div>
+      <div class="footer-col"><h4>QUICK LINKS</h4>
+        <a href="about.html">About</a><a href="services.html">Services</a><a href="special-meetings.html">Special Meetings</a><a href="leadership.html">Leadership</a>
+      </div>
+      <div class="footer-col"><h4>MINISTRY</h4>
+        <a href="schools.html">Schools &amp; Mentorship</a><a href="sermons.html">Messages</a><a href="give.html">Give</a><a href="contact.html">Prayer Requests</a>
+      </div>
+      <div class="footer-col"><h4>CONTACT</h4>
+        <a href="contact.html">Visit Us</a><a href="contact.html">Contact Form</a><a href="index.html#about">Newsletter</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Supernatural City Church. All rights reserved.</span>
+      <span>Raising Kings, Priests, and Prophets.</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/script.js"></script>
+</body>
+</html>
