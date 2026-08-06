@@ -1,366 +1,122 @@
-  :root{
-    --purple-deep:#210641;
-    --purple-mid:#3B0F66;
-    --purple-glow:#7A3FC2;
-    --gold:#D4AF37;
-    --gold-light:#F3D98B;
-    --orange-glow:#FF7A45;
-    --cream:#FAF7F0;
-    --ink:#160A28;
-    --muted:#C9B8E0;
-    --glass:rgba(255,255,255,0.06);
-    --glass-border:rgba(243,217,139,0.18);
-  }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    background:var(--purple-deep);
-    color:var(--cream);
-    font-family:'Inter',sans-serif;
-    overflow-x:hidden;
-  }
-  h1,h2,h3,.eyebrow,.logo-text{font-family:'Montserrat',sans-serif;}
-  a{color:inherit;text-decoration:none;}
-  img{max-width:100%;display:block;}
-  .wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
-  ::selection{background:var(--gold);color:var(--ink);}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Supernatural City Church</title>
+<meta name="description" content="Learn about Supernatural City Church's vision, mission, and mandate to raise Kings, Priests, and Prophets.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
 
-  /* ---------- Signature glyph (flame-crown) ---------- */
-  .glyph{width:34px;height:34px;flex-shrink:0;}
-  .glyph path,.glyph polyline{fill:none;stroke:var(--gold-light);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;}
-  .glyph .flame{fill:var(--orange-glow);stroke:none;opacity:.9;}
+</head>
+<body>
+<header>
+  <nav>
+    <a href="index.html" class="brand">
+      <svg class="glyph" viewBox="0 0 48 48"><path d="M8 20 L14 12 L18 20 L24 8 L30 20 L34 12 L40 20 L40 34 Q24 30 8 34 Z"/><path class="flame" d="M24 4c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z" stroke="none"/></svg>
+      <span class="logo-text">SUPERNATURAL CITY<span>CHURCH</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="about.html" style="color:var(--gold-light);">About</a>
+      <a href="services.html">Services</a>
+      <a href="special-meetings.html">Meetings</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="schools.html">Schools</a>
+      <a href="sermons.html">Messages</a>
+      <a href="contact.html">Contact</a>
+      <a href="give.html" class="nav-give-mobile">Give Online</a>
+    </div>
+    <a href="give.html" class="nav-cta">Give Online</a>
+    <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+<section class="page-banner">
+  <div class="breadcrumb"><a href="index.html">Home</a> / About</div>
+  <div class="eyebrow" style="display:inline-flex;">ABOUT SCC</div>
+  <h1>A Ministry Built on Presence, Power, and Purpose</h1>
+  <p class="lead">Discover the vision, mission, and mandate driving everything we do at Supernatural City Church.</p>
+</section>
 
-  /* ---------- Nav ---------- */
-  header{
-    position:fixed;top:0;left:0;right:0;z-index:100;
-    background:rgba(21,6,41,0.55);
-    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
-    border-bottom:1px solid var(--glass-border);
-    transition:background .3s ease;
-  }
-  nav{display:flex;align-items:center;justify-content:space-between;padding:16px 28px;max-width:1180px;margin:0 auto;}
-  .brand{display:flex;align-items:center;gap:12px;}
-  .logo-text{font-weight:800;font-size:15px;letter-spacing:2.5px;color:var(--cream);line-height:1.1;}
-  .logo-text span{display:block;font-size:9px;font-weight:500;letter-spacing:2px;color:var(--gold-light);font-family:'Inter',sans-serif;margin-top:3px;}
-  .nav-links{display:flex;gap:34px;font-size:13px;letter-spacing:.5px;font-weight:500;}
-  .nav-links a{opacity:.85;position:relative;padding:4px 0;}
-  .nav-links a:hover{opacity:1;color:var(--gold-light);}
-  .nav-cta{
-    background:linear-gradient(135deg,var(--gold-light),var(--gold));
-    color:var(--ink);padding:10px 22px;border-radius:999px;font-weight:700;font-size:13px;
-    letter-spacing:.4px;box-shadow:0 0 24px rgba(212,175,55,0.35);
-    transition:transform .25s ease, box-shadow .25s ease;
-  }
-  .nav-cta:hover{transform:translateY(-2px);box-shadow:0 0 32px rgba(212,175,55,0.55);}
-  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;}
-  .burger span{width:24px;height:2px;background:var(--cream);}
+<section id="about">
+  <div class="wrap prose fade-up">
+    <p>Supernatural City Church is an <strong>apostolic ministry</strong> committed to raising believers who walk in the supernatural reality of God's Kingdom. We are passionate about transforming lives through the ministry of the Word, Prayer, the Holy Spirit, and Kingdom Discipleship.</p>
+    <p>We exist to build people into <strong>Kings, Priests, and Prophets</strong> who carry God's Presence into every sphere of society and establish His influence across cities and nations. Every gathering, school, and outreach we run flows from one conviction: that ordinary people, filled with the Holy Spirit, become extraordinary carriers of God's glory.</p>
+    <p>From weekly services to prophetic schools and city-wide gatherings, Supernatural City Church exists as a spiritual headquarters — a place where the presence of God is tangible, the Word is taught with depth, and believers are sent out equipped to establish God's City wherever they are planted.</p>
+  </div>
+</section>
 
-  /* ---------- Hero ---------- */
-  .hero{
-    position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;
-    background:
-      radial-gradient(ellipse 80% 60% at 50% 0%, rgba(122,63,194,0.35), transparent 60%),
-      radial-gradient(ellipse 60% 50% at 50% 100%, rgba(255,122,69,0.10), transparent 70%),
-      linear-gradient(180deg,var(--purple-deep) 0%, #150429 60%, #0D0219 100%);
-    overflow:hidden;
-    padding:140px 24px 0;
-  }
-  .particles{position:absolute;inset:0;pointer-events:none;}
-  .particle{
-    position:absolute;bottom:-10%;border-radius:50%;
-    background:radial-gradient(circle,var(--gold-light),var(--orange-glow) 70%,transparent 75%);
-    opacity:0;animation:rise linear infinite;
-  }
-  @keyframes rise{
-    0%{transform:translateY(0) translateX(0);opacity:0;}
-    10%{opacity:.85;}
-    90%{opacity:.4;}
-    100%{transform:translateY(-110vh) translateX(var(--drift,20px));opacity:0;}
-  }
-  .skyline{position:absolute;left:0;right:0;bottom:0;width:100%;opacity:.55;filter:drop-shadow(0 0 22px rgba(212,175,55,0.25));}
-  .hero-inner{position:relative;z-index:2;max-width:840px;}
-  .eyebrow{
-    display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:3px;font-weight:600;
-    color:var(--gold-light);border:1px solid var(--glass-border);padding:8px 18px;border-radius:999px;
-    background:var(--glass);margin-bottom:28px;
-  }
-  .hero h1{
-    font-size:clamp(2.4rem,6vw,4.6rem);font-weight:800;line-height:1.08;letter-spacing:-1px;
-    background:linear-gradient(180deg,#FFFFFF 10%, var(--gold-light) 95%);
-    -webkit-background-clip:text;background-clip:text;color:transparent;
-    margin-bottom:26px;
-  }
-  .hero p.lead{font-size:clamp(1rem,1.6vw,1.2rem);color:var(--muted);max-width:620px;margin:0 auto 42px;line-height:1.7;}
-  .cta-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
-  .btn{
-    padding:15px 30px;border-radius:999px;font-weight:700;font-size:14px;letter-spacing:.4px;
-    transition:transform .25s ease, box-shadow .25s ease, background .25s ease;display:inline-block;
-  }
-  .btn-primary{background:linear-gradient(135deg,var(--gold-light),var(--gold));color:var(--ink);box-shadow:0 0 30px rgba(212,175,55,0.35);}
-  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 0 40px rgba(212,175,55,0.55);}
-  .btn-ghost{border:1px solid var(--glass-border);background:var(--glass);color:var(--cream);}
-  .btn-ghost:hover{border-color:var(--gold-light);color:var(--gold-light);transform:translateY(-3px);}
-  .scroll-cue{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);opacity:.7;animation:bob 2.4s ease-in-out infinite;}
-  @keyframes bob{0%,100%{transform:translate(-50%,0);}50%{transform:translate(-50%,8px);}}
+<section class="tint" id="vision">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <div class="eyebrow">OUR VISION</div>
+      <h2>Establishing God's City in Every City</h2>
+      <p>To raise Supernatural Christians — Kings, Priests, and Prophets — with a burning spirit to transform nations, by the Person, Presence, and Power of the Holy Spirit.</p>
+    </div>
+  </div>
+</section>
 
-  /* ---------- Sections generic ---------- */
-  section{position:relative;padding:120px 0;}
-  .section-head{max-width:640px;margin:0 auto 64px;text-align:center;}
-  .section-head .eyebrow{background:none;border:none;padding:0;margin-bottom:16px;}
-  .section-head h2{font-size:clamp(1.9rem,3.4vw,2.6rem);font-weight:800;color:var(--cream);letter-spacing:-.5px;}
-  .section-head p{color:var(--muted);margin-top:16px;font-size:1.02rem;line-height:1.7;}
-  .divider{width:64px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:0 auto;}
+<section id="mission">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <div class="eyebrow">OUR MISSION</div>
+      <h2>Three Commitments That Drive Everything We Do</h2>
+    </div>
+    <div class="grid-3 fade-up">
+      <div class="card"><span class="num">MISSION 01</span><h3>Aggressive Soul Winning</h3><p>Relentlessly reaching the lost and building disciples who carry the fire of the gospel into their world — in workplaces, campuses, and homes.</p></div>
+      <div class="card"><span class="num">MISSION 02</span><h3>Advancing the Kingdom Supernaturally</h3><p>Moving in the demonstration of the Spirit — signs, wonders, and power that establish Kingdom reality, not just Kingdom theory.</p></div>
+      <div class="card"><span class="num">MISSION 03</span><h3>Setting Hearts on Fire for God</h3><p>Cultivating a burning, undivided devotion to Christ in every believer we raise, so worship and obedience flow from love.</p></div>
+    </div>
+  </div>
+</section>
 
-  .fade-up{opacity:0;transform:translateY(28px);transition:opacity .8s ease, transform .8s ease;}
-  .fade-up.in{opacity:1;transform:translateY(0);}
+<section class="tint">
+  <div class="wrap">
+    <div class="section-head fade-up">
+      <div class="eyebrow">OUR MANDATE</div>
+      <h2>What We Have Been Called to Build</h2>
+    </div>
+    <div class="grid-2 fade-up">
+      <div class="card"><span class="num">MANDATE 01</span><h3>Raising Supernatural Christianity</h3><p>Equipping believers to live and minister in the supernatural power of the Holy Spirit as a normal way of life, not an occasional experience.</p></div>
+      <div class="card"><span class="num">MANDATE 02</span><h3>Building God's City in Every City</h3><p>Planting Kingdom influence and apostolic government in every city we are sent to, through disciples who carry God's presence into culture.</p></div>
+    </div>
+    <div class="cta-band fade-up" style="margin-top:60px;">
+      <h2>Ready to Encounter This Vision in Person?</h2>
+      <p>Join us at a service or reach out to plan your first visit — we would love to welcome you.</p>
+      <div class="cta-row"><a href="services.html" class="btn btn-primary">View Services</a><a href="contact.html" class="btn btn-ghost">Plan a Visit</a></div>
+    </div>
+  </div>
+</section>
 
-  /* ---------- About ---------- */
-  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
-  .about-copy p{color:var(--muted);line-height:1.85;margin-bottom:18px;font-size:1.02rem;}
-  .about-copy p strong{color:var(--gold-light);font-weight:600;}
-  .about-frame{
-    aspect-ratio:4/5;border-radius:24px;
-    background:linear-gradient(160deg,var(--purple-mid),var(--purple-deep) 70%);
-    border:1px solid var(--glass-border);position:relative;overflow:hidden;
-    display:flex;align-items:center;justify-content:center;
-  }
-  .about-frame .glyph{width:96px;height:96px;opacity:.9;}
-  .about-frame::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(255,122,69,0.18),transparent 55%);}
-
-  /* ---------- Cards ---------- */
-  .card{
-    background:var(--glass);border:1px solid var(--glass-border);border-radius:20px;padding:34px 28px;
-    backdrop-filter:blur(10px);transition:transform .3s ease, border-color .3s ease, box-shadow .3s ease;
-  }
-  .card:hover{transform:translateY(-6px);border-color:rgba(243,217,139,0.4);box-shadow:0 20px 50px rgba(0,0,0,0.35);}
-  .card .num{font-family:'Montserrat',sans-serif;font-weight:800;font-size:13px;color:var(--orange-glow);letter-spacing:2px;margin-bottom:16px;display:block;}
-  .card h3{font-size:1.15rem;font-weight:700;margin-bottom:10px;color:var(--cream);}
-  .card p{color:var(--muted);font-size:.94rem;line-height:1.65;}
-
-  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
-  .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
-
-  /* Alternate section tint */
-  .tint{background:linear-gradient(180deg,transparent, rgba(122,63,194,0.08), transparent);}
-
-  /* ---------- Services ---------- */
-  .service-card{
-    background:var(--glass);border:1px solid var(--glass-border);border-radius:18px;padding:28px;
-    display:flex;flex-direction:column;gap:14px;
-  }
-  .service-card .time{color:var(--gold-light);font-weight:700;font-size:.85rem;letter-spacing:1px;}
-  .service-card h3{font-size:1.05rem;font-weight:700;}
-  .service-card .cadence{color:var(--muted);font-size:.88rem;}
-  .service-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px;}
-  .mini-btn{font-size:.76rem;font-weight:600;padding:8px 14px;border-radius:999px;border:1px solid var(--glass-border);color:var(--muted);}
-  .mini-btn:hover{border-color:var(--gold-light);color:var(--gold-light);}
-
-  /* ---------- Events ---------- */
-  .event-card{border-radius:22px;overflow:hidden;border:1px solid var(--glass-border);background:var(--glass);}
-  .event-top{height:150px;background:linear-gradient(140deg,var(--purple-mid),var(--purple-deep));position:relative;display:flex;align-items:center;justify-content:center;}
-  .event-top::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 30%,rgba(255,122,69,0.25),transparent 60%);}
-  .event-body{padding:26px;}
-  .event-body h3{font-size:1.1rem;font-weight:700;margin-bottom:8px;}
-  .event-body p{color:var(--muted);font-size:.9rem;line-height:1.6;margin-bottom:18px;}
-  .event-actions{display:flex;gap:10px;}
-  .event-actions a{flex:1;text-align:center;padding:10px;border-radius:10px;font-size:.82rem;font-weight:700;}
-  .event-actions .learn{border:1px solid var(--glass-border);color:var(--muted);}
-  .event-actions .register{background:linear-gradient(135deg,var(--gold-light),var(--gold));color:var(--ink);}
-
-  /* ---------- Leadership ---------- */
-  .leader{display:grid;grid-template-columns:280px 1fr;gap:48px;align-items:center;margin-bottom:80px;}
-  .leader:nth-child(even){grid-template-columns:1fr 280px;}
-  .leader:nth-child(even) .leader-photo{order:2;}
-  .leader-photo{
-    aspect-ratio:1/1;border-radius:20px;background:linear-gradient(160deg,var(--purple-mid),var(--purple-deep));
-    border:1px solid var(--glass-border);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;
-  }
-  .leader-photo .glyph{width:64px;height:64px;opacity:.85;}
-  .leader-copy .role{color:var(--orange-glow);font-weight:700;font-size:.8rem;letter-spacing:2px;margin-bottom:10px;display:block;}
-  .leader-copy h3{font-size:1.7rem;font-weight:800;margin-bottom:16px;}
-  .leader-copy p{color:var(--muted);line-height:1.8;margin-bottom:22px;}
-  .leader-actions{display:flex;gap:14px;flex-wrap:wrap;}
-
-  /* ---------- Give ---------- */
-  .give-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
-  .give-card{text-align:center;padding:30px 20px;}
-  .give-card h3{font-size:1rem;margin-bottom:8px;}
-  .give-card p{font-size:.85rem;color:var(--muted);margin-bottom:0;}
-  .give-note{text-align:center;color:var(--muted);font-size:.9rem;margin-top:40px;}
-
-  /* ---------- Sermons teaser ---------- */
-  .sermon-teaser{
-    border:1px solid var(--glass-border);border-radius:24px;padding:60px 40px;text-align:center;
-    background:linear-gradient(160deg,rgba(122,63,194,0.14),rgba(255,122,69,0.05));
-  }
-  .sermon-teaser h2{font-size:1.8rem;font-weight:800;margin-bottom:14px;}
-  .sermon-teaser p{color:var(--muted);max-width:520px;margin:0 auto 28px;line-height:1.7;}
-
-  /* ---------- Social ---------- */
-  .social-row{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;}
-  .social-pill{
-    display:flex;align-items:center;gap:10px;padding:12px 22px;border-radius:999px;
-    border:1px solid var(--glass-border);background:var(--glass);font-size:.85rem;font-weight:600;
-  }
-  .social-pill:hover{border-color:var(--gold-light);color:var(--gold-light);}
-
-  /* ---------- Contact ---------- */
-  .contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;}
-  .contact-info .item{margin-bottom:26px;}
-  .contact-info .label{color:var(--gold-light);font-size:.78rem;font-weight:700;letter-spacing:1.5px;margin-bottom:6px;display:block;}
-  .contact-info .val{color:var(--muted);line-height:1.6;}
-  form.card{display:flex;flex-direction:column;gap:16px;}
-  form.card input, form.card textarea{
-    background:rgba(255,255,255,0.04);border:1px solid var(--glass-border);border-radius:12px;
-    padding:14px 16px;color:var(--cream);font-family:'Inter',sans-serif;font-size:.92rem;
-  }
-  form.card input::placeholder, form.card textarea::placeholder{color:#8b7aa6;}
-  form.card input:focus, form.card textarea:focus{outline:2px solid var(--gold-light);outline-offset:1px;}
-  form.card textarea{min-height:120px;resize:vertical;}
-  form.card .hp{position:absolute;left:-9999px;}
-  form.card button{
-    background:linear-gradient(135deg,var(--gold-light),var(--gold));color:var(--ink);border:none;
-    padding:15px;border-radius:12px;font-weight:700;font-size:.95rem;cursor:pointer;margin-top:6px;
-  }
-  form.card button:hover{box-shadow:0 0 30px rgba(212,175,55,0.4);}
-
-  /* ---------- Footer ---------- */
-  footer{border-top:1px solid var(--glass-border);padding:56px 0 32px;}
-  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px;}
-  .footer-col h4{font-size:.82rem;letter-spacing:1.5px;color:var(--gold-light);margin-bottom:16px;}
-  .footer-col a{display:block;color:var(--muted);font-size:.9rem;margin-bottom:10px;}
-  .footer-col a:hover{color:var(--gold-light);}
-  .footer-brand p{color:var(--muted);font-size:.88rem;line-height:1.7;margin-top:14px;max-width:280px;}
-  .footer-bottom{border-top:1px solid var(--glass-border);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:#8b7aa6;font-size:.8rem;}
-
-  @media(max-width:920px){
-    .nav-cta{display:none;}
-    .burger{display:flex;}
-    .nav-links{
-      display:flex;flex-direction:column;gap:4px;
-      position:absolute;top:100%;right:20px;left:20px;
-      background:#1B0538;padding:16px;border-radius:16px;
-      border:1px solid var(--glass-border);
-      box-shadow:0 20px 50px rgba(0,0,0,0.45);
-      max-height:0;overflow:hidden;opacity:0;pointer-events:none;
-      transition:max-height .35s ease, opacity .25s ease;
-    }
-    .nav-links.open{max-height:420px;opacity:1;pointer-events:auto;}
-    .nav-links a{padding:12px 10px;border-radius:10px;}
-    .nav-links a:hover{background:rgba(255,255,255,0.05);}
-    .nav-links .nav-give-mobile{
-      display:block;margin-top:6px;text-align:center;font-weight:700;color:var(--ink);
-      background:linear-gradient(135deg,var(--gold-light),var(--gold));border-radius:10px;
-    }
-    .burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
-    .burger.open span:nth-child(2){opacity:0;}
-    .burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
-    .burger span{transition:transform .25s ease, opacity .2s ease;}
-    .about-grid,.contact-grid{grid-template-columns:1fr;}
-    .grid-3,.grid-2,.give-grid,.services-grid{grid-template-columns:1fr 1fr;}
-    .leader,.leader:nth-child(even){grid-template-columns:1fr;text-align:center;}
-    .leader-photo{width:220px;margin:0 auto;order:0 !important;}
-    .footer-grid{grid-template-columns:1fr 1fr;}
-    .eyebrow{white-space:normal;text-align:center;font-size:11px;padding:8px 14px;}
-    .hero{padding-top:120px;}
-  }
-  @media(max-width:600px){
-    .grid-3,.grid-2,.give-grid,.services-grid{grid-template-columns:1fr;}
-    .footer-grid{grid-template-columns:1fr;}
-    section{padding:70px 0;}
-    nav{padding:14px 18px;}
-    .logo-text{font-size:13px;}
-  }
-  @media (prefers-reduced-motion: reduce){
-    .particle{animation:none;display:none;}
-    .fade-up{transition:none;opacity:1;transform:none;}
-    .scroll-cue{animation:none;}
-  }
-
-  /* ================= INNER PAGE COMPONENTS ================= */
-
-  /* Page banner (smaller hero for inner pages) */
-  .page-banner{
-    position:relative;padding:150px 24px 80px;text-align:center;overflow:hidden;
-    background:
-      radial-gradient(ellipse 70% 60% at 50% 0%, rgba(122,63,194,0.32), transparent 60%),
-      linear-gradient(180deg,var(--purple-deep) 0%, #170430 100%);
-  }
-  .page-banner .breadcrumb{font-size:.8rem;color:var(--muted);margin-bottom:18px;letter-spacing:.5px;}
-  .page-banner .breadcrumb a{color:var(--gold-light);}
-  .page-banner .breadcrumb a:hover{text-decoration:underline;}
-  .page-banner h1{font-size:clamp(2rem,4.4vw,3.2rem);font-weight:800;letter-spacing:-1px;
-    background:linear-gradient(180deg,#FFFFFF 10%, var(--gold-light) 95%);
-    -webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:16px;}
-  .page-banner p.lead{color:var(--muted);max-width:620px;margin:0 auto;font-size:1.05rem;line-height:1.7;}
-
-  /* Prose blocks for long-form bios / content */
-  .prose{max-width:760px;margin:0 auto;}
-  .prose p{color:var(--muted);line-height:1.9;margin-bottom:20px;font-size:1.02rem;}
-  .prose p strong{color:var(--gold-light);font-weight:600;}
-  .prose h3{color:var(--cream);font-size:1.3rem;font-weight:700;margin:34px 0 14px;}
-
-  /* Two-column bio layout for inner leadership pages */
-  .bio-hero{display:grid;grid-template-columns:340px 1fr;gap:56px;align-items:start;margin-bottom:20px;}
-  .bio-photo{
-    aspect-ratio:4/5;border-radius:22px;background:linear-gradient(160deg,var(--purple-mid),var(--purple-deep));
-    border:1px solid var(--glass-border);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;
-  }
-  .bio-photo::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(255,122,69,0.18),transparent 55%);}
-  .bio-photo .glyph{width:88px;height:88px;opacity:.9;}
-  .bio-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;}
-  .bio-meta span{font-size:.78rem;font-weight:700;letter-spacing:1px;color:var(--gold-light);
-    border:1px solid var(--glass-border);padding:8px 14px;border-radius:999px;background:var(--glass);}
-
-  /* Simple info table (duration / fees / schedule) */
-  .info-table{width:100%;border-collapse:collapse;margin:24px 0;}
-  .info-table tr{border-bottom:1px solid var(--glass-border);}
-  .info-table td{padding:16px 6px;color:var(--muted);font-size:.95rem;}
-  .info-table td:first-child{color:var(--gold-light);font-weight:700;width:220px;font-size:.82rem;letter-spacing:1px;}
-
-  /* Detail / curriculum list */
-  .detail-list{list-style:none;margin:20px 0;}
-  .detail-list li{
-    display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--glass-border);color:var(--muted);line-height:1.6;
-  }
-  .detail-list li .n{color:var(--orange-glow);font-weight:800;font-family:'Montserrat',sans-serif;font-size:.85rem;flex-shrink:0;padding-top:2px;}
-  .detail-list li strong{color:var(--cream);}
-
-  /* Requirements checklist */
-  .check-list{list-style:none;margin:20px 0;}
-  .check-list li{display:flex;gap:12px;padding:10px 0;color:var(--muted);}
-  .check-list li::before{content:"✦";color:var(--gold-light);flex-shrink:0;}
-
-  /* School / program cards on hub pages */
-  .school-card{display:flex;flex-direction:column;height:100%;}
-  .school-card .tag{color:var(--orange-glow);font-weight:700;font-size:.72rem;letter-spacing:1.5px;margin-bottom:14px;}
-  .school-card h3{font-size:1.2rem;font-weight:700;margin-bottom:10px;}
-  .school-card p{color:var(--muted);font-size:.92rem;line-height:1.65;margin-bottom:20px;flex-grow:1;}
-  .school-card a.mini-btn{align-self:flex-start;}
-
-  /* CTA band used near footer of inner pages */
-  .cta-band{
-    border-radius:24px;padding:56px 40px;text-align:center;margin-top:20px;
-    background:linear-gradient(160deg,rgba(122,63,194,0.16),rgba(255,122,69,0.05));
-    border:1px solid var(--glass-border);
-  }
-  .cta-band h2{font-size:1.7rem;font-weight:800;margin-bottom:14px;}
-  .cta-band p{color:var(--muted);max-width:520px;margin:0 auto 26px;line-height:1.7;}
-  .cta-band .cta-row{justify-content:center;}
-
-  .badge-row{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 8px;}
-  .badge{font-size:.72rem;font-weight:700;letter-spacing:1px;color:var(--gold-light);
-    border:1px solid var(--glass-border);padding:7px 13px;border-radius:999px;background:var(--glass);}
-
-  @media(max-width:920px){
-    .bio-hero{grid-template-columns:1fr;text-align:center;}
-    .bio-photo{max-width:280px;margin:0 auto;}
-    .bio-meta{justify-content:center;}
-    .info-table td:first-child{width:150px;}
-  }
-  @media(max-width:600px){
-    .page-banner{padding:130px 20px 60px;}
-    .info-table td:first-child{display:block;width:auto;margin-bottom:4px;}
-    .info-table tr{display:block;padding:14px 0;}
-    .info-table td{display:block;padding:2px 0;}
-  }
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <svg class="glyph" viewBox="0 0 48 48"><path d="M8 20 L14 12 L18 20 L24 8 L30 20 L34 12 L40 20 L40 34 Q24 30 8 34 Z"/><path class="flame" d="M24 4c2 3 4 5 4 8a4 4 0 0 1-8 0c0-3 2-5 4-8z" stroke="none"/></svg>
+          <span class="logo-text">SUPERNATURAL CITY<span>CHURCH</span></span>
+        </div>
+        <p>Raising Kings, Priests, and Prophets. Establishing God's City in every City.</p>
+      </div>
+      <div class="footer-col"><h4>QUICK LINKS</h4>
+        <a href="about.html">About</a><a href="services.html">Services</a><a href="special-meetings.html">Special Meetings</a><a href="leadership.html">Leadership</a>
+      </div>
+      <div class="footer-col"><h4>MINISTRY</h4>
+        <a href="schools.html">Schools &amp; Mentorship</a><a href="sermons.html">Messages</a><a href="give.html">Give</a><a href="contact.html">Prayer Requests</a>
+      </div>
+      <div class="footer-col"><h4>CONTACT</h4>
+        <a href="contact.html">Visit Us</a><a href="contact.html">Contact Form</a><a href="index.html#about">Newsletter</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Supernatural City Church. All rights reserved.</span>
+      <span>Raising Kings, Priests, and Prophets.</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/script.js"></script>
+</body>
+</html>
